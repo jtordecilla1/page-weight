@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Weight</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <span class="logo">⚖ page weight</span>
+    <div class="summary" id="summary">–</div>
+  </header>
+
+  <div class="controls">
+    <div class="filters" id="filters"></div>
+    <input class="search" id="search" type="text" placeholder="filter by URL..." />
+  </div>
+
+  <div class="loading" id="loading">
+    <div class="spinner"></div>
+    <span>measuring page…</span>
+  </div>
+
+  <div class="table-wrap" id="tableWrap" style="display: none;">
+    <table>
+      <thead>
+        <tr>
+          <th class="col-url sortable" data-col="url">URL</th>
+          <th class="col-type sortable" data-col="type">Type</th>
+          <th class="col-size sortable active desc" data-col="size">Size</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="empty" id="empty">Reload the page to capture requests.</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
