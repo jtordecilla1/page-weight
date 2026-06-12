@@ -52,3 +52,6 @@ where a page's weight comes from.
 - `storage` — reserved for future settings/persistence.
 - `<all_urls>` (host permission) — required for the content script to run on
   all pages.
+## Demo
+
+<img width="556" height="482" alt="image" src="https://github.com/user-attachments/assets/c383ff8f-7bda-4693-b488-97d9d9420864" />
